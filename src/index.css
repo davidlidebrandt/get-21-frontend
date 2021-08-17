@@ -7,6 +7,7 @@ body {
   margin: 0;
   font-family: 'Indie Flower', cursive;
   font-family: 'Ubuntu', sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 1px;
   color: white;
 }
@@ -35,14 +36,50 @@ body {
   background-image: linear-gradient(to bottom right, #0172cb, #00c8f6, #0a3c8e);
 }
 
+.bg-lighter-blue {
+  background-color: #00c8f6;
+}
+
+.bg-medium-blue {
+  background-color: #0172cb;
+}
+
 .bg-darker-blue {
   background-color: #0a3c8e;
+}
+
+.text-medium-blue {
+  color: #0172cb;
 }
 
 .text-darker-blue {
   color: #0a3c8e;
 }
 
+.text-darkest-blue {
+  color: rgb(1,47,47);
+}
+
+.text-pink {
+  color: #ae4bed;
+}
+
+.border-color-darker-blue {
+  border-color: #0a3c8e;
+}
+
 .border-color-pink {
   border-color: #ae4bed;
+}
+
+.text-shadow-pink {
+  text-shadow: 1px 1.5px 1.5px #ae4bed;
+}
+
+.custom-box-shadow {
+  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.custom-pink-box-shadow {
+  box-shadow: rgba(174, 75, 237) 0px 30px 60px -12px, rgba(174, 75, 237) 0px 18px 36px -18px;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LoginCard() {
+export default function SignupCard() {
     return (
         <div className="bg-gradient w-full min-h-2/5 rounded-md pt-12 custom-pink-box-shadow text-lighter-blue font-black">
              <form>
@@ -22,6 +22,15 @@ export default function LoginCard() {
         className="block mb-2 text-xl font-extrabold  w-full rounded-md border-b-2 border-color-darker-blue bg-lighter-blue focus:outline-none py-1 focus-bg custom-box-shadow "
         type="password"
         name="password"
+        required
+      />
+        <label className="text-xl text-left block">
+        Repeat Password
+      </label>
+      <input
+        className="block mb-2 text-xl font-extrabold  w-full rounded-md border-b-2 border-color-darker-blue bg-lighter-blue focus:outline-none py-1 focus-bg custom-box-shadow "
+        type="repeat-password"
+        name="repeat-password"
         required
       />
     

@@ -14,10 +14,10 @@ export default function NavMenu() {
           <Link to="/login" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
             Log In
           </Link>
-          <button className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
+          <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
             Sign Up
-          </button>
-          <button className="text-center block my-10 m-auto w-2/3 py-4 mt-16 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">
+          </Link>
+          <button className="text-center block my-10 m-auto w-2/4 py-4 mt-20 rounded-lg bg-lighter-blue font-extrabold custom-inner-box-shadow hover-button">
             Help
           </button>
         </div>

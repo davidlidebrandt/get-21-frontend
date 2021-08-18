@@ -21,7 +21,7 @@ body {
 
 #login {
   min-height: 100vh;
-  background: url("./assets/images/login-signup.jpg") no-repeat;
+  background: url("./assets/images/5439922.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -123,4 +123,8 @@ body {
   background-color: rgba(174, 75, 237, 0.5);
   transition-timing-function: ease-out;
   transition-duration: 800ms;
+}
+
+.focus-bg:focus {
+  background-color: rgba(174, 75, 237, 0.2);
 }

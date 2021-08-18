@@ -104,3 +104,17 @@ body {
 .custom-inner-box-shadow {
   box-shadow: rgba(174, 75, 237) 0px 50px 100px -20px, rgba(174, 75, 237) 0px 30px 60px -30px, rgba(174, 75, 237) 0px -2px 6px 0px inset;
 }
+
+.hover-button:hover {
+  background-image: none;
+  background-color: rgb(0, 200, 246, 0.5);
+  transition-timing-function: ease-out;
+  transition-duration: 800ms;
+}
+
+.hover-pink-button:hover {
+  background-image: none;
+  background-color: rgba(174, 75, 237, 0.5);
+  transition-timing-function: ease-out;
+  transition-duration: 800ms;
+}

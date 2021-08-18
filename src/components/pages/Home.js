@@ -12,10 +12,10 @@ export default function Home() {
               
                 </h1>
                 </div>
-                <div className="px-8">
-                <button className="block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow">Log In</button>
-                    <button className="block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow">Sign Up</button>
-                    <button className="block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow">Help</button>
+                <div className="px-12">
+                <button className="block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">Log In</button>
+                    <button className="block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">Sign Up</button>
+                    <button className="block my-10 m-auto w-2/3 py-4 mt-16 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">Help</button>
                 </div>
                   
                     </div>
@@ -34,8 +34,8 @@ export default function Home() {
                 </div>
                 <div className="bg-darker-blue rounded-b-md py-5">
                 <p className="mx-12 my-14 text-2xl text-center">A game based on the classic card game Black Jack. </p>
-                <p className="text-xl mx-12 text-center"><a className="rounded-lg bg-gradient text-darker-blue py-3 px-14 font-extrabold custom-inner-box-shadow text-2xl">Log in</a> in or <a className="rounded-lg bg-gradient py-3 px-14  text-darker-blue font-extrabold custom-inner-box-shadow text-2xl">Sign up</a></p>
-                <p className="text-xl mx-12 text-center mt-4 mb-12">To create an account and start playing.</p>
+                <p className="text-xl mx-12 text-center"><a className="hover-button rounded-lg bg-gradient text-darker-blue py-3 px-14 font-extrabold custom-inner-box-shadow text-2xl">Log in</a> in or <a className="hover-pink-button rounded-lg pink-blue-gradient py-3 px-14  text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">Sign up</a></p>
+                <p className="text-xl mx-12 text-center mt-8 mb-12">To create an account and start playing.</p>
                 </div>
             
                 </div>

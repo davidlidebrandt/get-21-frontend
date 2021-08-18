@@ -19,6 +19,12 @@ body {
 
 }
 
+#login {
+  min-height: 100vh;
+  background: url("./assets/images/login-signup.jpg") no-repeat;
+  background-size: cover;
+}
+
 .logo {
   font-family: 'Righteous', cursive;
   color: white;

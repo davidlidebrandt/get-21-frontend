@@ -26,7 +26,7 @@ export default function LoginCard() {
       />
     
        <div className="my-8 pt-8 text-center">
-            <button type="submit" className="hover-pink-button block w-full rounded-lg pink-blue-gradient py-3 px-12 mx-2  mb-12 text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">
+            <button type="submit" className="hover-pink-button block w-full rounded-lg pink-blue-gradient py-3 px-12 mx-2  mb-16 text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">
               Log In
             </button>
             </div>

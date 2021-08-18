@@ -3,7 +3,7 @@ import NavMenu from '../other/NavMenu'
 import SignupCard from '../other/SignupCard'
 
 
-export default function LogIn() {
+export default function SignUp() {
     return (
         <div id="login">
         <div className="grid grid-cols-12 grid-rows-6 min-h-screen">

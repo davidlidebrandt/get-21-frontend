@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 export default function IndexCard() {
   return (
@@ -17,13 +18,13 @@ export default function IndexCard() {
           A game based on the classic card game Black Jack.
         </p>
         <p className="text-xl mx-12 text-center">
-          <a className="hover-button rounded-lg bg-gradient text-darkest-blue mx-2 py-3 px-12 font-extrabold custom-inner-box-shadow text-2xl">
+          <Link to="/login" className="hover-button rounded-lg bg-gradient text-darkest-blue mx-2 py-3 px-12 font-extrabold custom-inner-box-shadow text-2xl">
             Log in
-          </a>
+          </Link>
           in or
-          <a className="hover-pink-button rounded-lg pink-blue-gradient py-3 px-12 mx-2  text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">
+          <Link to="/signup" className="hover-pink-button rounded-lg pink-blue-gradient py-3 px-12 mx-2  text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">
             Sign up
-          </a>
+          </Link>
         </p>
         <p className="text-xl mx-12 text-center mt-6 mb-12">
           To create an account and start playing.

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function LoginCard() {
     return (
@@ -30,6 +31,7 @@ export default function LoginCard() {
               Log In
             </button>
             </div>
+            <p className="text-center text-xl mb-12 ">Not signed up yet? <Link  to="/signup" className="bg-gradient rounded-md px-4 py-2 custom-inner-box-shadow hover-button">Sign Up</Link></p>
             </div>
     </form>
       </div>

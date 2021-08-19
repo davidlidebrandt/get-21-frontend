@@ -8,6 +8,7 @@ body {
   font-family: 'Indie Flower', cursive;
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Nunito', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   color: white;
 }
@@ -25,8 +26,13 @@ body {
   background-size: cover;
 }
 
+#start-menu {
+  min-height: 100vh;
+  background: url("./assets/images/5439922.jpg") no-repeat;
+  background-size: cover;
+}
+
 .logo {
-  font-family: 'Righteous', cursive;
   color: white;
 }
 

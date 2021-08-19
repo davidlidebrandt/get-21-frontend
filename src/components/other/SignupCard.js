@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function SignupCard() {
     return (
@@ -39,6 +40,7 @@ export default function SignupCard() {
               Sign Up
             </button>
             </div>
+            <p className="text-center text-xl mb-12 ">Already have an account? <Link  to="/login" className="bg-gradient rounded-md px-4 py-2 custom-inner-box-shadow hover-button">Log In</Link></p>
             </div>
     </form>
       </div>

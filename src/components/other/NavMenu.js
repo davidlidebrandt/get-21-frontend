@@ -6,7 +6,7 @@ import { GiCardAceSpades } from "react-icons/gi"
 
 export default function NavMenu() {
   return (
-    <nav className="w-1/2 h-full bg-darker-blue text-xl opacity-95 grid place-items-center text-darkest-blue relative">
+    <nav className=" h-full bg-darker-blue text-xl opacity-95 grid place-items-center text-darkest-blue relative">
       <div className="w-full">
         <div className="h-1/6 w-full rounded-t-md  m-auto absolute top-0 rounded-md bg-gradient">
           <Link to="/">

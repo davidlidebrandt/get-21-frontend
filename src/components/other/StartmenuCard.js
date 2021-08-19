@@ -1,10 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaUserAstronaut } from "react-icons/fa"
 
 export default function StartmenuCard() {
+    const [displayLeaderBoard, setDisplayLeaderBoard] = useState("hidden")
+
     return (
         <div className="bg-gradient w-full rounded-md text-xl custom-pink-box-shadow text-darker-blue font-black">
+            <div className={displayLeaderBoard + " center-absolute min-h-50 bg-darker-blue top-0 text-pink"}>I am a 
+            <button onClick={(e)=>{setDisplayLeaderBoard("hidden")}}>Close</button>
+            </div>
            <div className="grid grid-cols-12">
               <div className="col-span-12 text-center">
                   <h3 className="my-12 text-3xl text-center transform text-center text-darker-blue text-shadow-pink">Welcome User</h3>
@@ -16,9 +22,9 @@ export default function StartmenuCard() {
           <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
             Options
           </Link>
-          <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
+          <button onClick={(e)=> {setDisplayLeaderBoard("")}} className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
             Leader Board
-          </Link>
+          </button>
               </div> 
               <div className="col-span-6 bg-darker-blue rounded-br-md text-lighter-blue text-center">
                   <div className="bg-gradient m-auto rounded-md mx-8 my-10 p-3 custom-inner-box-shadow">

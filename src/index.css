@@ -51,6 +51,7 @@ body {
   min-height: 50%;
 }
 
+
 .hover-scale-175:hover {
   transform: scale(1.7);
 }

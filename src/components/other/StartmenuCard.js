@@ -2,14 +2,22 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaUserAstronaut } from "react-icons/fa"
+import { RiCloseCircleFill } from "react-icons/ri"
 
 export default function StartmenuCard() {
     const [displayLeaderBoard, setDisplayLeaderBoard] = useState("hidden")
 
     return (
         <div className="bg-gradient w-full rounded-md text-xl custom-pink-box-shadow text-darker-blue font-black">
-            <div className={displayLeaderBoard + " center-absolute min-h-50 bg-darker-blue top-0 text-pink"}>I am a 
-            <button onClick={(e)=>{setDisplayLeaderBoard("hidden")}}>Close</button>
+            <div className={displayLeaderBoard + " center-absolute min-h-50 bg-darker-blue top-0 text-pink z-50 w-1/2 rounded-md text-center px-10"}>
+            <h3 className="text-3xl my-6"><span className="text-lighter-blue">Leader</span> <span className="text-pink">Board</span></h3>
+            <div className="w-full py-4 my-2 bg-lighter-blue rounded-md text-darker-blue">User Score</div>
+            <div className="w-full py-4 my-2 pink-blue-gradient text-darker-blue rounded-md">User Score</div>
+            <div className="w-full py-4 my-2 bg-lighter-blue rounded-md text-darker-blue">User Score</div>
+            <div className="w-full py-4 my-2 pink-blue-gradient text-darker-blue rounded-md">User Score</div>
+            <div className="w-full py-4 my-2 bg-lighter-blue rounded-md text-darker-blue">User Score</div>
+            <div className="w-full py-4 my-2 pink-blue-gradient text-darker-blue rounded-md">User Score</div>
+            <button className="my-10" onClick={(e)=>{setDisplayLeaderBoard("hidden")}}><RiCloseCircleFill size="50" className="text-pink"/></button>
             </div>
            <div className="grid grid-cols-12">
               <div className="col-span-12 text-center">

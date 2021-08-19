@@ -3,6 +3,7 @@ import Home from "./components/pages/Home.js"
 import LogIn from "./components/pages/LogIn.js";
 import SignUp from "./components/pages/SignUp.js";
 import StartMenu from "./components/pages/StartMenu.js";
+import GamePage from "./components/pages/GamePage.js";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       </Route>
       <Route path="/startmenu">
       <StartMenu/>
+      </Route>
+      <Route path="/gamepage">
+      <GamePage/>
       </Route>
       </Switch>
     </div>

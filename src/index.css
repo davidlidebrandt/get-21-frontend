@@ -32,6 +32,12 @@ body {
   background-size: cover;
 }
 
+#game-page {
+  min-height: 100vh;
+  background: url("./assets/images/5439922.jpg") no-repeat;
+  background-size: cover;
+}
+
 .logo {
   color: white;
 }
@@ -39,6 +45,10 @@ body {
 /*Utilities*/
 .scale-200 {
   transform: scale(2.0);
+}
+
+.hover-scale-175:hover {
+  transform: scale(1.7);
 }
 
 
@@ -133,4 +143,11 @@ body {
 
 .focus-bg:focus {
   background-color: rgba(174, 75, 237, 0.2);
+}
+
+
+.text-pink-blue-gradient {
+  background: linear-gradient(to bottom right, #f5a9fd, #ae4bed , #0172cb,#00c8f6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

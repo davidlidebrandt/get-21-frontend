@@ -10,7 +10,7 @@ export default function NavMenu() {
       <div className="w-full">
         <div className="h-1/6 w-full rounded-t-md  m-auto absolute top-0 rounded-md bg-gradient">
           <Link to="/">
-          <h1 className="logo text-3xl mt-14 transform scale-150 rounded-md font-black text-center text-darker-blue text-shadow-pink">
+          <h1 className="logo text-3xl mt-14 transform scale-150 hover-scale-175 transition-all duration-700 rounded-md font-black text-center text-darker-blue text-shadow-pink">
             Get 21 <GiCardAceSpades className="inline m-0 rounded-md bg-gradient custom-inner-box-shadow transform rotate-6 opacity-95" />
           </h1>
           </Link>

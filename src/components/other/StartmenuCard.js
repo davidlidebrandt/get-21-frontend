@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaUserAstronaut } from "react-icons/fa"
 
 export default function StartmenuCard() {
     return (
@@ -9,7 +10,7 @@ export default function StartmenuCard() {
                   <h3 className="my-12 text-3xl text-center transform text-center text-darker-blue text-shadow-pink">Welcome User</h3>
                   </div> 
               <div className="col-span-6 bg-darker-blue px-16 text-darkest-blue rounded-bl-md">
-              <Link to="/login" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
+              <Link to="/gamepage" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
             New Game
           </Link>
           <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
@@ -19,10 +20,14 @@ export default function StartmenuCard() {
             Leader Board
           </Link>
               </div> 
-              <div className="col-span-6 bg-darker-blue rounded-br-md text-darker-blue text-center">
-                  <div className="bg-gradient m-auto rounded-md mx-8 my-10 py-10">
-                  <div className="mb-10">Your high score: 900</div>
-                  <div className="mb-10">Email: example@gmail.com</div>
+              <div className="col-span-6 bg-darker-blue rounded-br-md text-lighter-blue text-center">
+                  <div className="bg-gradient m-auto rounded-md mx-8 my-10 p-3 custom-inner-box-shadow">
+                      <div className="bg-darker-blue rounded-md pt-4">
+                         <div className=""><FaUserAstronaut size="80" className="m-auto mb-4 p-2 pink-blue-gradient rounded-md text-darker-blue custom-inner-box-shadow"/></div> 
+                  <div className="py-5">Your high score:
+                  <p className="text-2xl">900</p>
+                  </div>
+                  </div>
                   </div>
                </div> 
             </div> 

@@ -4,7 +4,9 @@ import { RiLoginCircleFill, RiAccountPinCircleFill } from "react-icons/ri"
 import { MdHelp } from "react-icons/md"
 import { GiCardAceSpades } from "react-icons/gi"
 
-export default function NavMenu() {
+export default function NavMenu({currentPage, setCurrentPage}) {
+  
+
   return (
     <nav className=" h-full bg-darker-blue text-xl opacity-95 grid place-items-center text-darkest-blue relative">
       <div className="w-full">
@@ -16,12 +18,23 @@ export default function NavMenu() {
           </Link>
         </div>
         <div className="px-14">
-          <Link to="/login" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
+          {
+            currentPage !== "login" ? (
+              <Link to="/login" className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
             Log In 
           </Link>
-          <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
-            Sign Up 
-          </Link>
+            ) : ( null )
+          }
+
+          {
+            currentPage !== "signup" ? (
+              <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
+              Sign Up 
+            </Link>
+            ) : ( null )
+          }
+          
+  
           <button className="text-center block my-10 m-auto w-2/4 py-4 mt-20 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">
             Help 
           </button>

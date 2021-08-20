@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiCardAceSpades } from "react-icons/gi"
 import { RiCloseCircleFill } from "react-icons/ri"
+import MobileNavMenu from "./MobileNavMenu";
 
 export default function NavMenu({currentPage, setCurrentPage}) {
   
@@ -46,11 +47,8 @@ export default function NavMenu({currentPage, setCurrentPage}) {
         </div>
       </div>
     </nav>
-
-    <nav className="xl:hidden col-span-12 grid grid-cols-2">
-          <div className="bg-gradient">I am</div>
-          <div className="bg-darker-blue">navbar</div>
-    </nav>
+          <MobileNavMenu/>
+   
     </>
   );
 }

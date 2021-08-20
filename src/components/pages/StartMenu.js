@@ -5,8 +5,8 @@ import StartmenuCard from '../other/StartmenuCard'
 export default function StartMenu() {
     return (
         <div id="start-menu">
-        <div className="grid grid-cols-12 grid-rows-6 min-h-screen">
-        <div className="col-span-2 row-span-6 w-full">
+        <div className="grid grid-cols-12 xl:grid-rows-6 min-h-screen w-full">
+        <div className="col-span-12  xl:col-span-2 xl:row-span-6">
         <NavMenu/>
         </div>
         <div className="col-span-6 col-start-4 row-span-6 grid place-items-center">

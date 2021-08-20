@@ -1,11 +1,41 @@
 import React from 'react'
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { GiCardAceSpades } from "react-icons/gi"
 import { RiCloseCircleFill } from "react-icons/ri"
 import svg from "../../assets/images/svg.svg"
 
-export default function MobileNavMenu() {
+export default function MobileNavMenu({currentPage, setDisplayHelp}) {
+    const [displayMenuModal, setDisplayMenuModal] = useState("hidden");
+
     return (
+        <>
+        <div className={displayMenuModal + " absolute top-0 left-0 w-full px-10 bg-gradient custom-inner-box-shadow z-50"}>
+            <div className="w-1/2 m-auto">
+        {
+            currentPage !== "login" ? (
+              <Link to="/login" className="text-center block w-1/2 my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
+            Log In 
+          </Link>
+            ) : ( null )
+          }
+
+          {
+            currentPage !== "signup" ? (
+              <Link to="/signup" className="text-center block my-10 m-auto py-4 rounded-lg pink-blue-gradient w-full font-extrabold custom-inner-box-shadow hover-pink-button">
+              Sign Up 
+            </Link>
+            ) : ( null )
+          }
+           <button onClick={()=> {setDisplayMenuModal("hidden"); setDisplayHelp(""); }} className="text-center block my-10 m-auto w-2/4 py-4 mt-20 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">
+            Help 
+          </button>
+          <button className="block m-auto" onClick={()=> { setDisplayMenuModal("hidden")}}>
+          <RiCloseCircleFill size="50" className="text-darker-blue my-10"/>
+          </button>
+        
+        </div>
+        </div>
         <nav className="xl:hidden col-span-12 grid grid-cols-2">
           <div className="bg-gradient">
           <Link to="/">
@@ -16,9 +46,11 @@ export default function MobileNavMenu() {
           </div>
           <div className="bg-darker-blue">
               <div className="float-right my-6 mr-6">
-              <button className="">  <img className="h-10 w-10" src={ svg } alt="Hamburger icon"></img>  </button> 
+              <button onClick={()=> { setDisplayMenuModal("")
+              }} className="">  <img className="h-10 w-10" src={ svg } alt="Hamburger icon"></img>  </button> 
               </div>
             </div>
     </nav>
+    </>
     )
 }

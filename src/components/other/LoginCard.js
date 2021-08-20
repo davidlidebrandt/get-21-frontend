@@ -29,11 +29,11 @@ export default function LoginCard() {
       />
     
        <div className="my-8 pt-8 text-center">
-            <button type="submit" className="hover-pink-button block w-full rounded-lg pink-blue-gradient py-3 px-12 mb-16 text-darkest-blue font-extrabold custom-inner-box-shadow text-2xl">
+            <button type="submit" className="hover-pink-button block w-full rounded-lg pink-blue-gradient py-3 px-12 mb-16 text-white font-extrabold custom-inner-box-shadow text-2xl">
               Log In
             </button>
             </div>
-            <p className="text-center text-xl mb-12 ">Not signed up yet? <Link  to="/signup" className="block xl:inline mt-4 bg-gradient rounded-md px-4 py-2 custom-inner-box-shadow hover-button">Sign Up</Link></p>
+            <p className="text-center text-xl mb-12 ">Not signed up yet? <Link  to="/signup" className="block xl:inline mt-4 bg-gradient rounded-md px-4 py-2 text-darkest-blue custom-inner-box-shadow hover-button">Sign Up</Link></p>
             </div>
     </form>
       </div>

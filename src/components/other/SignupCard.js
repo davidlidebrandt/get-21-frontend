@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 export default function SignupCard() {
     return (
-        <div className="bg-gradient my-10 mx-3 rounded-md pt-12 custom-pink-box-shadow text-lighter-blue font-black">
+        <div className="bg-gradient w-full my-10 mx-3 rounded-md pt-12 custom-pink-box-shadow text-lighter-blue font-black">
              <form>
                  <h3 className="text-3xl text-center text-4xl transform mb-12 mx-10 text-center text-darker-blue">
                  <span className="">Sign </span><span className="text-pink opacity-80">Up</span>
                    </h3>
-      <div className="w-2/3 m-auto text-darker-blue font-extrabold">
+      <div className="w-5/6 xl:w-2/3 m-auto text-darker-blue font-extrabold">
       <label className="text-xl text-left block">
        Username
       </label>

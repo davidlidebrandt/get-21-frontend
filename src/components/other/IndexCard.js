@@ -4,7 +4,7 @@ import { GiCardAceSpades } from "react-icons/gi"
 
 export default function IndexCard() {
   return (
-    <div className="bg-gradient rounded-md pt-12 my-10 mx-3 height-max-content custom-pink-box-shadow text-lighter-blue font-black">
+    <div className="bg-gradient w-full rounded-md pt-12 my-10 mx-3 height-max-content custom-pink-box-shadow text-lighter-blue font-black">
       <div className="bg-gradient m-10 p-16 rounded-t-md py-5 m-auto">
         <h1 className="logo text-4xl mb-16 transform scale-200 mx-10 text-center text-darker-blue text-shadow-pink">
           Get 21   <GiCardAceSpades className=" m-auto rounded-md bg-gradient custom-inner-box-shadow  transparent opacity-95 transform -rotate-6" />

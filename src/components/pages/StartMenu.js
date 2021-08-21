@@ -9,7 +9,7 @@ export default function StartMenu() {
         <div className="col-span-12  xl:col-span-2 xl:row-span-6">
         <NavMenu/>
         </div>
-        <div className="col-span-6 col-start-4 row-span-6 grid place-items-center">
+        <div className="col-span-12 xl:col-span-6 xl:col-start-4 row-span-6 grid place-items-center px-2">
             <StartmenuCard/>
         </div> 
         </div>

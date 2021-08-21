@@ -11,10 +11,13 @@ export default function MobileNavMenu({currentPage, setDisplayHelp}) {
     return (
         <>
         <div className={displayMenuModal + " absolute top-0 left-0 w-full px-10 bg-gradient custom-inner-box-shadow z-50"}>
-            <div className="w-1/2 m-auto">
+            <div className="w-1/3 m-auto">
+            <h1 className="logo text-4xl my-16 transform scale-125  transition-all duration-700 rounded-md font-black text-center text-darker-blue text-shadow-pink">
+            Get 21 
+          </h1>
         {
             currentPage !== "login" ? (
-              <Link to="/login" className="text-center block w-1/2 my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
+              <Link to="/login" className="text-center block  my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button">
             Log In 
           </Link>
             ) : ( null )
@@ -27,7 +30,7 @@ export default function MobileNavMenu({currentPage, setDisplayHelp}) {
             </Link>
             ) : ( null )
           }
-           <button onClick={()=> {setDisplayMenuModal("hidden"); setDisplayHelp(""); }} className="text-center block my-10 m-auto w-2/4 py-4 mt-20 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">
+           <button onClick={()=> {setDisplayMenuModal("hidden"); setDisplayHelp(""); }} className="text-center block my-10 mb-0 m-auto w-full py-4 rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button">
             Help 
           </button>
           <button className="block m-auto" onClick={()=> { setDisplayMenuModal("hidden")}}>

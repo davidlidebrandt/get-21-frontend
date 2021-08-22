@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+
 export default function GameHeader() {
     
     const [displayWarningModal, setDisplayWarningModal] = useState("hidden");
@@ -17,10 +18,13 @@ export default function GameHeader() {
 
     return (
         <>
-        <div className="center-absolute min-h-50 w-1/2 border-4 border-color-pink">
-            <div>{warningMessage}</div>
-            
-        <button className="my-10" onClick={(e)=>{hideWarningModal()}}><RiCloseCircleFill size="50" className="text-pink"/></button>
+        <div className={displayWarningModal + " center-absolute text-xl font-bold rounded-md bg-lighter-blue"}>
+            <div className="p-5 text-darkest-blue text-2xl bg-gradient rounded-t-md">{warningMessage}</div>
+            <div className="text-center">
+            <button className="my-10 mx-3 px-4 py-2 pink-blue-gradient rounded-md custom-inner-box-shadow font-bold" onClick={(e)=>{hideWarningModal()}}>Cancel</button>
+            <button className="my-10 mx-3  px-4 py-2 bg-gradient rounded-md custom-inner-box-shadow text-darkest-blue font-bold">Ok</button>
+            </div>
+ 
         </div>
         <nav className="bg-gradient py-9">
             <h1 className="inline text-3xl ml-12  rounded-md font-black text-center text-darker-blue text-shadow-pink">

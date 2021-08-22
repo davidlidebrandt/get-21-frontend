@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"
-import { GiCardAceSpades } from "react-icons/gi"
 
 export default function IndexCard() {
   return (
@@ -14,7 +13,7 @@ export default function IndexCard() {
         <p className="mx-12 my-14 text-2xl text-center">
           A game based on the classic card game Black Jack.
         </p>
-        <p className="text-xl xl:mx-12 text-center">
+        <div className="text-xl xl:mx-12 text-center">
           <Link to="/login" className="block xl:inline w-full hover-button rounded-lg bg-gradient text-darkest-blue py-3 px-12 font-extrabold custom-inner-box-shadow text-xl">
             Log in
           </Link>
@@ -23,7 +22,7 @@ export default function IndexCard() {
           <Link to="/signup" className="block xl:inline w-full hover-pink-button rounded-lg pink-blue-gradient py-3 px-12  text-white font-extrabold custom-inner-box-shadow text-xl">
             Sign up
           </Link>
-        </p>
+        </div>
         <p className="text-xl mx-12 text-center mt-6 mb-12">
           To create an account and start playing.
         </p>

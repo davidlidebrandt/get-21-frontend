@@ -26,17 +26,14 @@ export default function GameHeader() {
             </div>
  
         </div>
-        <nav className="bg-gradient py-9">
-            <h1 className="inline text-3xl ml-12  rounded-md font-black text-center text-darker-blue text-shadow-pink">
+        <nav className="bg-gradient py-9 min-h-content">
+            <h1 className="block xl:inline text-3xl xl:ml-12  rounded-md font-black text-center text-darker-blue text-shadow-pink">
             Get 21 
           </h1>
-            <div className="float-right">
-            <button  className="inline mr-12 hover-button rounded-lg bg-gradient text-darkest-blue py-3 px-12 font-extrabold custom-inner-box-shadow text-xl">Restart Game</button>
-            <button onClick={()=> {displayWarning("This game will be lost, proceed?")}} className="inline mr-12 hover-pink-button rounded-lg pink-blue-gradient py-3 px-12  text-white font-extrabold custom-inner-box-shadow text-xl">Go back</button>       
+            <div className="xl:float-right text-center">
+            <button  className="block xl:inline xl:mr-12 my-3 hover-button rounded-lg bg-gradient text-darkest-blue ml-2 px-4 py-1  xl:py-3 xl:px-12 font-extrabold custom-inner-box-shadow text-xl">Restart Game</button>
+            <button onClick={()=> {displayWarning("This game will be lost, proceed?")}} className="block xl:inline ml-2 xl:mr-12 hover-pink-button rounded-lg pink-blue-gradient px-4 py-1 xl:py-3 xl:px-12  text-white font-extrabold custom-inner-box-shadow text-xl">Go back</button>       
             </div>
-               
-
-         
         </nav>
         </>
     )

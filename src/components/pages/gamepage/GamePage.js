@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import GameCard from "./subcomp/GameCard.js";
-import GameHeader from "./subcomp/GameCard.js";
+import GameHeader from "./subcomp/GameHeader.js";
 
 export default function GamePage({ setCurrentPage }) {
   useEffect(() => {

@@ -34,6 +34,10 @@ body {
   height: max-content;
 }
 
+.min-h-content {
+  min-height: min-content;
+}
+
 .min-h-50 {
   min-height: 50%;
 }

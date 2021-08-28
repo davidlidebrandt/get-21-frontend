@@ -31,8 +31,8 @@ export default function GameHeader() {
             Get 21 
           </h1>
             <div className="xl:float-right text-center">
-            <button  className="block xl:inline xl:mr-12 my-3 hover-button rounded-lg bg-gradient text-darkest-blue ml-2 px-4 py-1  xl:py-3 xl:px-12 font-extrabold custom-inner-box-shadow text-xl">Restart Game</button>
-            <button onClick={()=> {displayWarning("This game will be lost, proceed?")}} className="block xl:inline ml-2 xl:mr-12 hover-pink-button rounded-lg pink-blue-gradient px-4 py-1 xl:py-3 xl:px-12  text-white font-extrabold custom-inner-box-shadow text-xl">Go back</button>       
+            <button  className="m-auto block xl:inline xl:mr-12  hover-button rounded-lg bg-gradient text-darkest-blue xl:ml-2 px-4 py-1  xl:py-3 xl:px-12 font-extrabold custom-inner-box-shadow text-xl m-auto ">Restart Game</button>
+            <button onClick={()=> {displayWarning("This game will be lost, proceed?")}} className="m-auto block xl:inline xl:ml-2 xl:mr-12 hover-pink-button rounded-lg pink-blue-gradient px-4 py-1 xl:py-3 xl:px-12  text-white font-extrabold custom-inner-box-shadow text-xl m-auto ">Go back</button>       
             </div>
         </nav>
         </>

@@ -1,6 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 
-export default function GameCard() {
+export default function GameCard({score, setScore}) {
+    
+    const [computerCardOne, setComputerCardOne] = useState(Math.floor(Math.random() * 11));
+    const [computerCardTwo, setComputerCardTwo] = useState(Math.floor(Math.random() * 11));
+
+    const [userCardOne, setUserCardOne] = useState(Math.floor(Math.random() * 11));
+    const [userCardTwo, setUserCardTwo] = useState(Math.floor(Math.random() * 11));
+
+    function generateCard(cardToSet) {
+        cardToSet(Math.floor(Math.random() * 11))
+    }
+
     return (
         <div className="bg-darker-blue h-full rounded-md">
             <div className="pink-blue-gradient rounded-t-md py-8">
@@ -8,7 +20,9 @@ export default function GameCard() {
             Get 21 
           </h1>
             </div>
-            
+            <p>{userCardOne}, {userCardTwo}</p>
+          
+
         </div>
     )
 }

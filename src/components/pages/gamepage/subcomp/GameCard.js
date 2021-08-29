@@ -1,11 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function GameCard({score, setScore}) {
-    const cardTypes = ['HEARTS', 'SPADES', 'CLUBS', 'DIAMONDS']
-    let cards = []
+    
     
     function generateDeck() {
+        const cardTypes = ['HEARTS', 'SPADES', 'CLUBS', 'DIAMONDS']
+        let cards = []
     
         for(let i =0; i < cardTypes.length; i++) {
             for(let j = 2; j <= 13; j++) {
@@ -26,20 +27,51 @@ export default function GameCard({score, setScore}) {
                 }
             }
         }
+        
+        return cards
     }
 
-    generateDeck();
-    
-    const [computerCardOne, setComputerCardOne] = useState(cards[Math.floor(Math.random() * 51)]);
-    const [computerCardTwo, setComputerCardTwo] = useState(cards[Math.floor(Math.random() * 51)]);
 
-    const [userCardOne, setUserCardOne] = useState(cards[Math.floor(Math.random() * 51)]);
-    const [userCardTwo, setUserCardTwo] = useState(cards[Math.floor(Math.random() * 51)]);
-    const [userTotal, setUserTotal] = useState(userCardOne[1] + userCardTwo[1])
+    function calcTotal(cardOne, cardTwo) {
+        let cardOneValue
+        let cardTwoValue
+
+        
+        if (cardOne[1] === "J" || cardOne[1] === "Q" || cardOne[1] === "K") {
+            cardOneValue = 10
+        }
+        else if (cardOne[1] === "A") {
+            cardOneValue = 11
+        }
+        else { cardOneValue = cardOne[1]}
+
+        if (cardTwo[1] === "J" || cardTwo[1] === "Q" || cardTwo[1] === "K") {
+            cardTwoValue = 10
+        }
+        else if (cardTwo[1] === "A") {
+            cardTwoValue = 11
+        }
+        else { cardTwoValue = cardTwo[1]}
+
+        return cardOneValue + cardTwoValue
+    }
+
+
+    const [deck, setDeck] = useState(generateDeck());
+
+    
+    const [computerCardOne, setComputerCardOne] = useState(deck[Math.floor(Math.random() * 51)]);
+    const [computerCardTwo, setComputerCardTwo] = useState(deck[Math.floor(Math.random() * 51)]);
+
+    const [userCardOne, setUserCardOne] = useState(deck[Math.floor(Math.random() * 51)]);
+    const [userCardTwo, setUserCardTwo] = useState(deck[Math.floor(Math.random() * 51)]);
+    const [userTotal, setUserTotal] = useState(calcTotal(userCardOne, userCardTwo))
 
     function generateCard(cardToSet) {
-        cardToSet(Math.floor(Math.random() * 11))
+        cardToSet(Math.floor(Math.random() * 51))
     }
+
+
 
     return (
         <div className="bg-darker-blue h-full rounded-md">
@@ -48,22 +80,21 @@ export default function GameCard({score, setScore}) {
             Get 21 
           </h1>
             </div>
-            <div className="">
-                <div className="w-1/2 inline-block">
-            <div className="grid place-items-center h-48 w-36  border-2 rounded-md">
-                <div>{userCardOne[0]}</div>
-                <div>{userCardOne[1]}</div>
+            <div className="grid grid-cols-12">
+            <div className="col-span-12 text-center">
+            <div className="h-48 w-36 inline-block  border-2 rounded-md">
+              <div>{userCardOne[0]}</div>
+              <div>{userCardOne[1]}</div>
+            </div>
+            <div className="h-48 w-36 inline-block border-2 rounded-md">
+            <div>{userCardTwo[0]}</div>
+              <div>{userCardTwo[1]}</div>
             </div>
             </div>
-            <div className="w-1/2 inline-block">
-            <div className="grid place-items-center h-48 w-36 x border-2 rounded-md">
-                <div>{userCardTwo[0]}</div>
-                <div> {userCardTwo[1]}</div>  
+            <div className="col-span-12 text-center">
+                {userTotal}
             </div>
             </div>
-            <div className="text-center">{userTotal}</div>
-            </div>
-        
             
         </div>
     )

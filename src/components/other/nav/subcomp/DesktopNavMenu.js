@@ -8,7 +8,7 @@ export default function DesktopNavMenu({ currentPage, setDisplayHelp }) {
         <div className="h-1/6 w-full rounded-t-md  m-auto absolute top-0 rounded-md bg-gradient">
           <Link to="/">
             <h1 className="logo text-3xl mt-14 transform scale-150 hover-scale-175 transition-all duration-700 rounded-md font-black text-center text-darker-blue text-shadow-pink">
-              Get 21
+            <span className="inline-block transform -rotate-6">Get</span> <span className="inline-block transform rotate-6">21</span>
             </h1>
           </Link>
         </div>
@@ -16,7 +16,7 @@ export default function DesktopNavMenu({ currentPage, setDisplayHelp }) {
           {currentPage !== "login" ? (
             <Link
               to="/login"
-              className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full font-extrabold custom-inner-box-shadow hover-button"
+              className="text-center block my-10 m-auto py-4 rounded-lg bg-gradient w-full text-white font-extrabold custom-inner-box-shadow hover-button"
             >
               Log In
             </Link>
@@ -35,7 +35,7 @@ export default function DesktopNavMenu({ currentPage, setDisplayHelp }) {
             onClick={() => {
               setDisplayHelp("");
             }}
-            className="text-center block my-10 m-auto  py-4 w-full rounded-lg bg-gradient font-extrabold custom-inner-box-shadow hover-button"
+            className="text-center block my-10 m-auto  py-4 w-full rounded-lg text-white font-extrabold custom-inner-box-shadow hover-button"
           >
             Help
           </button>
